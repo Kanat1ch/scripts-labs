@@ -1,0 +1,118 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 100%;
+    min-height: 100vh;
+    font-family: 'Ubuntu', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url(./bg.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    h1 {
+        color: #fff;
+        text-transform: uppercase;
+        margin-bottom: 30px;
+    }
+
+    .time {
+        display: flex;
+
+        .time-item {
+            margin: 0 10px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            color: #fff;    
+
+            .num {
+                font-size: 40px;
+                margin-bottom: 10px;
+                font-weight: 700;
+            }
+
+            small {
+                font-size: 16px;
+                text-transform: uppercase;
+            }
+        }
+
+        span.time-item {
+            font-size: 40px;
+            margin-top: -2px;
+        }
+    }
+}
+
+@media screen and (max-width: 690px) {
+    .container {
+        h1 {
+            font-size: 26px;
+        }
+
+        .time {
+            .time-item {
+                margin: 0 5px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 420px) {
+    .container {
+        h1 {
+            font-size: 22px;
+        }
+
+        .time {
+            .time-item {
+                .num {
+                    font-size: 30px;
+                }
+
+                small {
+                    font-size: 15px;
+                }
+            }
+
+            span.time-item {
+                font-size: 30px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 370px) {
+    .container {
+        h1 {
+            font-size: 20px;
+        }
+
+        .time {
+            .time-item {
+                margin: 0 3px;
+                .num {
+                    font-size: 30px;
+                }
+
+                small {
+                    font-size: 12px;
+                }
+            }
+        }
+    }
+}

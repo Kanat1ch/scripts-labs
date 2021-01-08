@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab 8, Task 1</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div class="panel">
+        <div class="panel-item dot">
+            <div class="panel-item__label">Dot</div>
+            <button class="panel-item__button" id="dot">•</button>
+        </div>
+        <div class="panel-item line">
+            <div class="panel-item__label">Line</div>
+            <button class="panel-item__button" id="line"></button>
+        </div>
+        <div class="panel-item circle">
+            <div class="panel-item__label">Circle</div>
+            <button class="panel-item__button" id="circle"></button>
+        </div>
+        <div class="panel-item ellipse">
+            <div class="panel-item__label">Ellipse</div>
+            <button class="panel-item__button" id="ellipse"></button>
+        </div>
+        <div class="panel-item rectangle">
+            <div class="panel-item__label">Rectangle</div>
+            <button class="panel-item__button" id="rectangle"></button>
+        </div>
+        <div class="panel-item clear">
+            <div class="panel-item__label">Clear</div>
+            <button class="panel-item__button" id="clear"></button>
+        </div>
+    </div>
+    <canvas style="display: block;" id="canvas">Ваш браузер не поддерживается</canvas>
+
+    <div class="modal">
+        <div class="modal__title"></div>
+        <div class="modal__inputs">
+            <!-- <div class="modal__inputs_item">
+                <label for="name">Name:</label>
+                <input type="text" name="name" id="name">
+            </div>
+
+            <div class="modal__inputs_item">
+                <label for="width">Width:</label>
+                <input type="number" name="width" id="width" placeholder="px">
+            </div>
+
+            <div class="modal__inputs_item">
+                <label for="width">Height:</label>
+                <input type="number" name="width" id="width" placeholder="px">
+            </div>
+
+            <div class="modal__inputs_item">
+                <label for="color">Color:</label>
+                <input type="color" name="color" id="color">
+            </div>
+
+            <div class="modal__inputs_item">
+                <label for="fill">Fill/Stroke:</label>
+                <input type="radio" name="fill" id="fill" checked>
+                <input type="radio" name="fill" id="stroke">
+            </div> -->
+        </div>
+        <div class="modal__buttons">
+            <button class="modal-btn" id="okay">OK</button>
+            <button class="modal-btn" id="cancel">Cancel</button>
+        </div>
+    </div>
+    <div class="overlay"></div>
+</body>
+</html>

@@ -1,0 +1,193 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    padding: 50px 10%;
+    text-align: center;
+    font-family: sans-serif;
+}
+
+.panel {
+    width: 100%;
+    height: 100px;
+    background-color: #222;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    border-radius: 10px;
+}
+
+.panel-item {
+    width: 50px;
+    height: 70px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.panel-item__label {
+    color: #fff;
+    margin-bottom: 3px;
+}
+
+.panel-item__button {
+    border-radius: 10px;
+    width: 50px;
+    height: 50px;
+    padding: 10px;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    outline: none;
+    cursor: pointer;
+    transition: .15s linear;
+    background-color: #eee !important;
+}
+
+
+.panel-item__button:hover {
+    background-color: rgb(148, 181, 241) !important;
+}
+
+.panel-item__button.active {
+    background-color: rgb(129, 243, 118) !important;
+}
+
+.panel-item.line button {
+    background: url('./img/line.png') center center/60% no-repeat;
+}
+
+.panel-item.circle button {
+    background: url('./img/circle.png') center center/60% no-repeat;
+}
+
+.panel-item.ellipse button {
+    background: url('./img/ellipse.png') center center/60% no-repeat;
+}
+
+.panel-item.rectangle button {
+    background: url('./img/rectangle.png') center center/60% no-repeat;
+}
+
+.panel-item.clear button {
+    background: url('./img/clear.png') center center/60% no-repeat;
+}
+
+.vertical-line {
+    width: 1px;
+    height: 70px;
+    background-color: #888;
+}
+
+canvas {
+    border: 1px solid #000;
+    margin: 0 auto; 
+    width: 100%;
+    height: 60vh;
+    border-radius: 10px;
+}
+
+.modal {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 400px;
+    border-radius: 10px;
+    padding: 0 30px 10px;
+    background-color: #eee;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.5);
+    z-index: 30;
+    opacity: 0;
+    visibility: hidden;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.modal__title {
+    padding: 10px 0;
+    border-bottom: 1px dashed #666;
+    font-size: 20px;
+}
+
+.modal__inputs {
+    width: 100%;
+    margin: 20px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.modal__inputs input[type="radio"] {
+    width: 40px;
+}
+
+.modal__inputs_item {
+    width: 50%;
+    margin: 15px 0;
+    display: flex;
+    justify-content: center
+}
+
+.modal__inputs_item label {
+    width: 50%;
+    text-align: right;
+    margin-right: 10px;
+}
+
+.modal__inputs_item input {
+    width: 50%;
+    padding-left: 5px;
+}
+
+.modal__inputs_item input[type="color"] {
+    width: 50%;
+    padding-left: 0;
+    margin-top: -2px;
+}
+
+.modal__buttons {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.modal-btn {
+    width: 30%;
+    border: 1px solid #666;
+    height: 25px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 0 5px;
+}
+
+.modal-btn:focus {
+    border: none;
+    outline: none;
+}
+
+#okay {
+    border: 1px solid green;
+    background-color: rgb(173, 241, 167);
+}
+
+#cancel {
+    border: 1px solid red;
+    background-color: rgb(253, 203, 203);
+}
+
+.overlay {
+    display: none;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    backdrop-filter: blur(3px) brightness(30%);
+    z-index: 1;
+}
