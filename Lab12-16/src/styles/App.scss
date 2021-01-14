@@ -1,0 +1,224 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 15px;
+}
+
+a {
+  color: #8C3243;
+  transition-duration: .3s;
+  &:hover {
+    color: #D996A2;
+  }
+}
+
+.btn-danger {
+  background-color: #8C3243;
+  border: none;
+  &:hover {
+    background-color: #742634;
+    border: none;
+  }
+}
+
+.btn-primary {
+  background-color: #324a8c;
+  border: none;
+  &:hover {
+    background-color: #1b3270;
+    border: none;
+  }
+}
+
+.App {
+  .Layout {
+    .navigation {
+      padding: 0;
+      .navbar {
+        min-height: 7vh;
+        display: flex;
+        justify-content: space-between;
+
+        &-brand {
+          font-size: 20px;
+          font-weight: 700;
+          color: #fff;
+        }
+      }
+      .navbar-nav a {
+        color: #fff;
+        margin-left: 20px;
+        font-weight: 600;
+        &:hover {
+          color: #888;
+        }
+      }
+      a {
+        font-size: 16px;
+      }
+    }
+    .content {
+      background: #333;
+      min-height: 93vh;
+
+      //content containers
+
+      .Information {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        min-height: 93vh;
+        text-align: center;
+        color: #fff;
+        h2 {
+          margin-bottom: 1rem;
+          font-weight: 700;
+        }
+        p {
+          font-size: 16px;
+        }
+      }
+
+      .Edit, .Add {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 93vh;
+        .card {
+          width: 80%;
+          background-color: #333;
+          color: #fff;
+          border-color: #fff;
+          .card-header {
+            font-weight: bold;
+            background-color: transparent;
+            border-bottom: 1px solid #dcdcdc;
+            color: #fff;
+            margin: 0 1.5rem;
+            padding: 1rem 0;
+            font-size: 18px;
+          }
+          input,select {
+            background-color: transparent;
+            color: #fff;
+          }
+          option {
+            background-color: #333;
+            color: #fff;
+          }
+        }
+      }
+
+      .Persons {
+        min-height: 93vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 3rem;
+        margin: 0 auto;
+        .filters {
+          width: 80%;
+          margin-bottom: 2rem;
+          background-color: transparent;
+          border: none;
+          .card-body {
+            padding: 0;
+            border: none;
+          }
+          .form-group {
+            position: relative;
+            margin-bottom: 0;
+            display: flex;
+            i.fa {
+              position: absolute;
+              left: 15px;
+              top: 9px;
+              font-size: 16px;
+              color: #aaa;
+            }
+            input{
+              padding-left: 35px;
+            }
+            select,input {
+              padding-left: 30px;
+              background-color: #333;
+              color: #fff;
+            }
+            option {
+              background-color: #333;
+              color: #fff;
+            }
+            button {
+              margin-left: 1rem;
+            }
+          }
+        }
+        .navlink {
+          text-align: left;
+        }
+        .persons-list {
+          width: 80%;
+          .card-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #262626;
+            color: #fff;
+            border-color: #888;
+          }
+          .card-body {
+            background-color: #2b2b2b;
+            color: #fff;
+            .row {
+              justify-content: flex-start;
+              .Person {
+                background-color: transparent;
+                border: none;
+                margin-bottom: 20px;
+                .card {
+                  position: relative;
+                  background-color: #2b2b2b;
+                  border-color: #fff;
+                  padding-bottom: 10px;
+                  .card-text {
+                    position: absolute;
+                    bottom: 0;
+                    right: 20px;
+                    color: #999;
+                    font-weight: 700;
+                    span {
+                      font-style: italic;
+                      font-weight: 400;
+                    }
+                  }
+                  .list-group-item {
+                    background-color: #2b2b2b;
+                    border: none;
+                    padding: 5px 20px;
+                  }
+                  span {
+                    font-weight: bold;
+                  }
+                  .buttons {
+                    position: absolute;
+                    top: 0;
+                    right: 0;
+                    margin: 1rem;
+                    display: flex;
+                    flex-direction: column;
+                    button {
+                      margin-bottom: 5px;
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

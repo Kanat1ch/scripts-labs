@@ -1,0 +1,27 @@
+.App {
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-color: #333;
+
+    form {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        margin: 20px 0;
+
+        .form-group {
+            display: flex;
+
+            input {
+                background-color: transparent;
+                color: #fff;
+            }
+
+            button {
+                margin-left: 10px;
+            }
+        }
+    }
+}
